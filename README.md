@@ -24,15 +24,3 @@
 ## 许可证
 
 根据 MIT 许可证分发。打开 [LICENSE.md](LICENSE.md) 查看更多内容。
-
-## 参考资料
-
-* [MoonShot AI开放平台 文档](https://platform.moonshot.cn/docs/intro#%E6%96%87%E6%9C%AC%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B)
-* [OpenAI Platform](https://platform.openai.com/docs/overview)
-* [DeepSeek+Chatbox+Prompt：搭建AI搭档记录](https://zhuanlan.zhihu.com/p/17651541211)
-* [Chatbox AI官网：办公学习的AI好助手，全平台AI客户端，官方免费下载](https://chatboxai.app/zh)
-
-
-## 开发日志
-
-* [ai-chatbox标签的模拟实现-开发日志](https://blog.csdn.net/2401_87362551/article/details/146168935?spm=1001.2014.3001.5502)
