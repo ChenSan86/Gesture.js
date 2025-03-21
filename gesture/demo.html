@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>gesture驱动鼠标demo</title>
+    <style>
+      /* 显示视频和画布（调试用） */
+      #videoContainer {
+        position: relative;
+        width: 640px;
+        height: 480px;
+        border: 1px solid #ccc;
+      }
+      #canvas {
+        position: absolute;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+      }
+
+      /* 虚拟鼠标样式 */
+      #virtualMouse {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        background-color: blue;
+        /* 默认蓝色 */
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transition: background-color 0.2s, transform 0.05s linear;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>gesture驱动（卡尔曼滤波+相对位移+状态平滑+视觉反馈）</h3>
+    <div id="videoContainer">
+      <video
+        autoplay
+        id="videoElement"
+        width="640"
+        height="480"
+        style="transform: scaleX(-1)"
+      ></video>
+      <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+    <div id="virtualMouse"></div>
+
+    <!-- 引入 TensorFlow.js 和 Handpose 模型 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose@latest"></script>
+    <script src="./gesture.js">
+    </script>
+  </body>
+</html>
